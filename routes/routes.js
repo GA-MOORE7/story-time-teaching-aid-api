@@ -3,6 +3,10 @@ const Quiz = require('../models/model');
 const router = express.Router();
 
 
+router.get('/', (req, res) => {
+    res.send('Welcome to the Quiz API!');
+});
+
 // POST request to add a new quiz
 router.post('/quizzes', async (req, res) => {
   
